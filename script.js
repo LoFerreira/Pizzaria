@@ -14,7 +14,12 @@ pizzaJson.map((item, index) => {
     pizzaItem.querySelector('a').addEventListener('click', (e) => {
         e.preventDefault();
 
+        c('.pizzaWindowArea').style.opacity = 0;
         c('.pizzaWindowArea').style.display = 'flex';
+        setTimeout(() => {
+            c('.pizzaWindowArea').style.opacity = 1;
+        }, 200);
+
     })
 
     //MOSTRANDO OS MODELOS DE PIZZA NA TELA ===============================
