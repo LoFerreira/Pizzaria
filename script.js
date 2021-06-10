@@ -1,5 +1,5 @@
 const c = (e) => document.querySelector(e);
-const ca = (e) => document.querySelectorAll(ca);
+const ca = (ca) => document.querySelectorAll(ca);
 
 pizzaJson.map((item, index) => {
     //PREENCHER AS INFORMAÇÕES EM pizzaItem ===============================
@@ -30,7 +30,10 @@ pizzaJson.map((item, index) => {
         c('.pizzaInfo h1').innerHTML = pizzaJson[key].name; 
         c('.pizzaInfo--desc').innerHTML = pizzaJson[key].description; 
         c('.pizzaBig img').src = pizzaJson[key].img;
-        
+        c('.pizzaInfo--actualPrice').innerHTML = `RS ${pizzaJson[key].price.toFixed(2)}`
+        ca('.pizzaInfo--size').forEach((size, sizeIndex) => {
+            size.querySelector('span').innerHTML = pizzaJson[key].sizes[sizeIndex];
+        })
 
     })
 
