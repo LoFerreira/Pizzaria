@@ -7,6 +7,7 @@ pizzaJson.map((item, index) => {
 
     pizzaItem.querySelector('.pizza-item--name').innerHTML = item.name
     pizzaItem.querySelector('.pizza-item--desc').innerHTML = item.description
+    pizzaItem.querySelector('.pizza-item--price').innerHTML = `RS ${item.price.toFixed(2)}`
 
     //MOSTRANDO OS MODELOS DE PIZZA NA TELA
     c('.pizza-area').append(pizzaItem);
