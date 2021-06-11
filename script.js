@@ -68,3 +68,17 @@ ca('.pizzaInfo--cancelButton, .pizzaInfo--cancelMobileButton').forEach((item) =>
     item.addEventListener('click', closeModal);
 })
 
+
+//BOTÕES DE QUANTIDADE DE PIZZAS ===============================
+c('.pizzaInfo--qtmenos').addEventListener('click', () => {
+    if (modalQT >=2) {
+        modalQT--;
+        c('.pizzaInfo--qt').innerHTML = modalQT;
+    }
+})
+
+c('.pizzaInfo--qtmais').addEventListener('click', () => {
+    modalQT++;
+    c('.pizzaInfo--qt').innerHTML = modalQT;
+})
+
