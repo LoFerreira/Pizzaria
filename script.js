@@ -53,7 +53,8 @@ pizzaJson.map((item, index) => {
     c('.pizza-area').append(pizzaItem);
 });
 
-//EVENTOS DO MODAL ===============================
+
+// ============================== EVENTOS DO MODAL ===============================
 
 
 //FECHANDO O MODAL ===============================
@@ -81,4 +82,16 @@ c('.pizzaInfo--qtmais').addEventListener('click', () => {
     modalQT++;
     c('.pizzaInfo--qt').innerHTML = modalQT;
 })
+
+//SELEÇÃO DOS TAMANHO DAS PIZZAS ===============================
+ca('.pizzaInfo--size').forEach((size, sizeIndex) => {
+    size.addEventListener('click', (e) => {
+        c('.pizzaInfo--size.selected').classList.remove('selected');
+        size.classList.add('selected');
+    });
+});
+
+
+
+
 
