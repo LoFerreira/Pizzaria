@@ -104,7 +104,7 @@ c('.pizzaInfo--addButton').addEventListener('click', () => {
     let identifier = pizzaJson[modalKey].id + '@' + size;
 
     //PROCURANDO DENTRO DO CART AS PIZZAS COM O MESMO ID E SIZE ===============================
-    let key = cart.findIndex((item) => item.identifier = identifier);
+    let key = cart.findIndex((item) => item.identifier == identifier);
 
     //JUNTANDO AS PIZZAS ACHADAS COM O MESMO ID E SIZE ===============================
     if(key > -1) {
