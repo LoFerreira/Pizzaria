@@ -2,7 +2,7 @@
 
 ## Projeto de um catálogo de pizzaria, com inserção das pizzas no carrinho, feito para aprendizado e melhor experiência das linguagens utilizadas.
 
-![](assets/gif.gif)
+![](/assets/gif.gif)
 
 ### 🛠 Tecnologias
 
